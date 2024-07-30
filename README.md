@@ -1,4 +1,4 @@
-# Java 이론 및 실습 코드 저장소입니다.
+# Spring 이론 및 실습 코드 저장소입니다.
 
 #### 개념 정리 링크 : https://www.notion.so/elice-track/3f63014304614af9a58d2d8f40aaef52
 
