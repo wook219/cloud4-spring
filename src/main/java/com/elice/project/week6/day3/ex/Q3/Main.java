@@ -12,6 +12,5 @@ public class Main {
         for(String beanName : allBeanNames){
             System.out.println(beanName);
         }
-
     }
 }
