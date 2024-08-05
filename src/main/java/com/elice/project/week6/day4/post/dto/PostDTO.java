@@ -4,7 +4,7 @@ public class PostDTO {
     //DTO - Data Transfer Object. 즉 Object와 Object 사이에 데이터를 전달하기 위한 객체다.
     //이 객체는 파라미터 값들을 담고 있다. 껍닥
 
-    private long id;
+    private Long id;
     private String title;
     private String content;
 
@@ -15,11 +15,11 @@ public class PostDTO {
         this.content = content;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

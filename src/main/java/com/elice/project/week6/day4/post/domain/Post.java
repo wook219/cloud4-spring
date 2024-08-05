@@ -1,7 +1,7 @@
 package com.elice.project.week6.day4.post.domain;
 
 public class Post {
-    private long id;
+    private Long id;
     private String title;
     private String content;
 
@@ -12,11 +12,11 @@ public class Post {
         this.content = content;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -32,4 +32,31 @@ public class PostService {
         data.add(post);
         return post;
     }
+
+    public Post updatePost(Long id, PostDTO postDTO) {
+
+        Post sendData = data.stream()
+                .filter(p -> p.getId().equals(id))
+                .findFirst()
+                .map(
+                        p -> {
+                            p.setTitle(postDTO.getTitle());
+                            p.setContent(postDTO.getContent());
+                            return p;
+                        }
+                )
+                .orElse(null);
+
+        return sendData;
+    }
+
+    public void deletePost(Long id) {
+        data.stream()
+                .filter(p -> p.getId().equals(id))
+                .findFirst()
+                .ifPresent(post -> data.remove(post))
+        ;
+
+        System.out.println("Post Delete Succeed");
+    }
 }
